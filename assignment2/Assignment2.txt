@@ -1,0 +1,45 @@
+- Exchange Rate Challenge
+This task is about a simulation of the conversion rate of currencies.
+
+Time estimated: 1 Day
+
+Description:
+- You may use your development environment to your convenience, your
+  workstation, IDE, setup, tooling, internet etc.
+- You may implement it using any scripting or development language of your
+  preference ( Python preferred).
+- You may use any libraries that will make your code cleaner, or better in any
+  way.
+
+The task has 3 steps. Please complete the phases one by one.
+
+Step 1: 
+1.1 Search the web for a USD EUR exchange rate API. ( Suggested:
+https://www.freeforexapi.com/api/live?pairs=USDEUR )
+1.2 Sample this source for the latest USD to EUR exchange value every 5
+seconds and print to the screen for 1 minute.
+- Expected output: Python/Other script that will call the API, read the value
+  and print it to the screen every 5 seconds for 1 minute.
+
+Step 2:
+2.1 Compute the average value over the last 60 seconds.
+2.2 Write the average value to a log file.
+2.3 Fine tune the code - optimize, rewrite etc. ( for example use flask8,
+black in python)
+- Expected output: Expand the script from Step 1 with the above tasks and
+  optimize the code to the extent possible.
+
+  Step 3: 
+3.1 Write a Dockerfile to run the above mentioned application/script with all
+the necessary dependencies. ( in Ubuntu)
+3.2 Run the Docker Container and show that the log file was produced. 
+3.3 Fine tune the Dockerfile with all the best practices. 
+- Expected output: A Dockerfile and a corresponding docker image that should
+  be able to start the script from Step 2 and produce the log file.
+
+Deliverables:
+- Dockerfile 
+- Docker image - which will include also the python script. 
+
+Upload the above files on a online drive of your choice and share the link to
+it.
