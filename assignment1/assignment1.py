@@ -15,12 +15,12 @@ results = pd.read_csv('./TestResults.csv')
 merged = pd.merge(info, results, on='TestId', how='inner')
 
 # Sorted based in Speed (Time)
-print('Based on Time \n\n')
-merged = merged.sort_values(by=['Time (ms)'], ascending=True)
-print(merged)
+# merged = merged.sort_values(
+#     by=['Time (ms)'], ascending=True, ignore_index=True)
 
-# For better performance
-# 1. High CPU frequency
-# 2. More threads (Common)
-# 3. Less Execution time
-# 4. Less Peak memory
+# merged = merged.sort_values(
+#     by=['PeakMemory (MB)'], ascending=True, ignore_index=True)
+
+merged = merged.sort_values(
+    by=['Build', 'Threads', 'MLNetwork'], ascending=True, ignore_index=True)
+print(merged.tail(20))
