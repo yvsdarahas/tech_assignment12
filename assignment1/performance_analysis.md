@@ -39,7 +39,7 @@ From the above table, both the Compute time and PeakMemory are less for Device_0
 
 Here the performance analysis was done based on the parameter Time(ms) which is obtained from the test results. The test results are sorted based on Device and Time(ms) as shown in the below figure. The devices having less Compute time are known to have a better performance.
 
-<img src="./sorted_time_device.png" alt="" style="height: 100px; width:100px;"/>
+<img src="./sorted_time_device.png" style="height: 50%; width:50%;"/>
 
 We can observe that Device_0 of Builds 6, 7, 8, 9, and 10 are performing well on Machine Learning loads. And all these best-performing devices are multithreaded(Threads = 5).
 
@@ -47,7 +47,7 @@ We can observe that Device_0 of Builds 6, 7, 8, 9, and 10 are performing well on
 
 This observation is carried out based on the Memory usage. The results are sorted based on the parameter PeakMemory(MB) as shown in the below figure.
 
-<img src="./sorted_memory.png" alt="" style="height: 100px; width:100px;"/>
+<img src="./sorted_memory.png" style="height: 50%; width:50%;"/>
 
 So, by considering the PeakMemory, Device_0 of build 10 having threads 1, 2, 3, 4, and 5 are performing well.
 
